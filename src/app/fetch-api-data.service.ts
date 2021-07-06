@@ -354,7 +354,7 @@ export class EditUserService {
 @Injectable({
   providedIn: 'root'
 })
-export class EditUserService {
+export class DeleteUserService {
   constructor(private http: HttpClient) {
   }
 
