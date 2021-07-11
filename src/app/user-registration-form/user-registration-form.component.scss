@@ -1,0 +1,93 @@
+.sign-in-card {
+  --blue: rgb(3, 118, 227);
+  --default-font: "Archivo", sans-serif;
+  --gray: rgb(130, 141, 153);
+  --yellow: rgb(230, 208, 88);
+  font-family: var(--default-font);
+  height: 501px;
+  width: 430px;
+  background-color: var(--yellow);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-in-container {
+  width: 334px;
+  height: 450px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sign-in-header {
+  text-align: center;
+}
+
+.sign-in-title {
+  font-size: 38px;
+  line-height: 50px;
+  color: var(--blue);
+  font-weight: 300;
+  font-family: var(--default-font);
+  padding-top: 20px;
+}
+
+#sign-in-title {
+  margin-bottom: 0;
+}
+
+.sign-in-form {
+  width: 334px;
+  color: var(--gray);
+  font-size: 15px;
+  font-family: var(--default-font);
+  line-height: 24px;
+}
+
+#username,
+#password,
+#email,
+#birthday {
+  border: 2px solid var(--blue);
+  border-radius: 4px;
+  background-color: white;
+  color: var(--gray);
+  display: block;
+  width: 330px;
+  height: 36px;
+  margin-bottom: 10px;
+}
+
+::placeholder {
+  opacity: 1;
+  padding: 6px 37px 6px 0;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.sign-in-button {
+  background-color: var(--yellow);
+  color: var(--blue);
+  width: 100%;
+  font-family: var(--default-font);
+  font-weight: 700;
+  text-align: center;
+}
+
+.sign-in-button:hover {
+  border-bottom: 2px solid var(--blue);
+}
+.button-container {
+  margin-left: auto;
+  width: 124px;
+  height: 36px;
+  align-self: flex-end;
+  justify-self: start;
+}
+
+.sign-in-dialog .mat-dialog-container {
+  padding: 0;
+}

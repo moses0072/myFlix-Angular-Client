@@ -1,8 +1,8 @@
-.login-card {
+.update-card {
   --blue: rgb(3, 118, 227);
   --default-font: "Archivo", sans-serif;
-  --gray: rgb(130, 141, 153);
   --yellow: rgb(230, 208, 88);
+  --black: rgb(0, 0, 0);
   font-family: var(--default-font);
   height: 501px;
   width: 430px;
@@ -10,44 +10,55 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-content: center;
 }
 
-.login-container {
+.update-container {
   width: 334px;
-  height: 501px;
+  height: 450px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.login-card-header {
+#update-dialog-close-button {
+  align-self: flex-end;
+  background-color: var(--blue);
+  color: white;
+}
+
+.update-header {
   text-align: center;
 }
 
-.login-card-title {
-  /* padding-top: 45px; */
-  font-size: 33px;
+.update-title {
+  font-size: 30px;
   line-height: 50px;
   color: var(--blue);
   font-weight: 300;
   font-family: var(--default-font);
-  margin: 0;
 }
 
-.login-card-form {
+#update-title {
+  margin-bottom: 0;
+}
+
+.update-form {
   width: 334px;
-  color: #000;
+  color: var(--blue);
   font-size: 15px;
   font-family: var(--default-font);
   line-height: 24px;
 }
 
 #username,
-#password {
-  border: 2px solid var(--blue);
+#password,
+#email,
+#birthday {
+  border: 2px solid rgb(22, 78, 209);
   border-radius: 4px;
-  background-color: white;
+  background-color: #fff;
   color: var(--gray);
   display: block;
   width: 330px;
@@ -56,14 +67,19 @@
 }
 
 ::placeholder {
-  /* color: red; */
   opacity: 1;
-  padding: 6px 0;
+  padding: 6px 37px 6px 0;
   font-size: 15px;
   line-height: 24px;
 }
 
-.login-card-button {
+.update-button-container {
+  margin-left: auto;
+  width: 124px;
+  height: 36px;
+}
+
+#update-info-button {
   background-color: var(--yellow);
   color: var(--blue);
   width: 100%;
@@ -72,18 +88,7 @@
   text-align: center;
 }
 
-.login-card-button:hover {
-  border-bottom: 2px solid var(--blue);
-}
-
-.button-container {
-  margin-left: auto;
-  width: 124px;
-  height: 36px;
-  align-self: flex-end;
-  justify-self: start;
-}
-
-.log-in-dialog .mat-dialog-container {
+.update-dialog .mat-dialog-container {
   padding: 0;
+  border-radius: 4px;
 }

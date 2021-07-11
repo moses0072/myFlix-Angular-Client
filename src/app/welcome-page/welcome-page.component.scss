@@ -1,6 +1,57 @@
 .main-page {
-  padding-top: 10%;
-  bottom: -100px;
-  height: 100%;
-  text-align: center;
+  --blue: rgb(3, 118, 227);
+  --default-font: "Archivo", sans-serif;
+  --yellow: rgb(230, 208, 88);
+  background-color: rgb(248, 237, 171);
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 430px;
+  height: 501px;
+  background-color: var(--yellow);
+  border-radius: 2px;
+}
+
+.main-page-title {
+  font-size: 38px;
+  font-weight: 300;
+  color: var(--blue);
+  line-height: 50px;
+  font-family: var(--default-font);
+}
+
+.button-clarifier-text {
+  color: var(--gray);
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: left;
+  font-family: var(--default-font);
+  margin: 0;
+}
+
+.container button {
+  background-color: var(--yellow);
+  color: var(--blue);
+  width: 100%;
+  font-family: var(--default-font);
+  font-weight: 700;
+}
+.container button:hover {
+  border-bottom: 2px solid var(--blue);
+}
+
+.log-in-wrapper {
+  align-self: flex-start;
+}
+
+.sign-up-wrapper {
+  align-self: flex-end;
 }

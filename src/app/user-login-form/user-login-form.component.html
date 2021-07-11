@@ -1,40 +1,40 @@
-<!-- src/app/user-login-form/user-login-form.component.html -->
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>Log in!</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <form>
-      <mat-form-field>
-        <input
-          matInput
-          [(ngModel)]="userData.Username"
-          placeholder="Username"
-          type="text"
-          name="Username"
-          required
-        >
-        </mat-form-field>
-        <mat-form-field>
-        <input
-          matInput
-          [(ngModel)]="userData.Password"
-          type = "password"
-          placeholder="Password"
-          name="Password"
-          required
-        >
-      </mat-form-field>
+<div class='login-card'>
+  <div class="login-container">
 
-    </form>
-  </mat-card-content>
-  <mat-card-actions>
-      <button
+    <header class="login-card-header">
+      <p class="login-card-title">Welcom back!</p>
+    </header>
+    <mat-card-content>
+      <form class="login-card-form">
+        <div>
+          <label for="Username">Username</label>
+          <input id="username"
+
+            [(ngModel)]="userData.Username"
+            placeholder="Enter your username"
+            type="text"
+            name="Username"
+            autocomplete="username"
+            required>
+        </div>
+        <div>
+          <label for="Password">Password</label>
+          <input id="password"
+            [(ngModel)]="userData.Password"
+            type="password"
+            placeholder="Enter your password"
+            name="Password"
+            autocomplete="current-password"
+            required>
+        </div>
+      </form>
+    </mat-card-content>
+    <mat-card-actions class="button-container">
+      <button class="login-card-button"
         mat-raised-button
-        (click)="userLogin()"
-        color="primary"
-      >
-      log in
+        (click)="userLogin()">
+        Log In
       </button>
-  </mat-card-actions>
-</mat-card>
+    </mat-card-actions>
+  </div>
+</div>

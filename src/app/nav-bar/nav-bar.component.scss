@@ -1,0 +1,57 @@
+.navbar {
+  --blue: rgb(3, 118, 227);
+  --default-font: "Archivo", sans-serif;
+  --gray: rgb(130, 141, 153);
+  --yellow: rgb(230, 208, 88);
+  --border-gray: rgb(48, 51, 58);
+  font-family: var(--default-font);
+  border: 1px solid var(--blue);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  background-color: var(--yellow);
+}
+
+.nav-container {
+  width: 80vw;
+  min-width: 400px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  line-height: 30px;
+  width: 190px;
+}
+
+.nav-links-right {
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.title {
+  color: red;
+}
+.app-title {
+  color: var(--blue);
+  font-size: 30px;
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.profile,
+.logout {
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.profile:hover,
+.logout:hover {
+  border-bottom: 2px solid var(--blue);
+}

@@ -1,0 +1,158 @@
+.profile-card-container {
+  --blue: rgb(3, 118, 227);
+  --default-font: "Archivo", sans-serif;
+  --yellow: rgb(230, 208, 88);
+  --dark-yellow: rgb(221, 189, 8);
+  --gray: rgb(130, 141, 153);
+  background-color: var(--darker-black);
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+}
+
+.profile-card-wrapper {
+  margin-top: 60px;
+  width: 80vw;
+  min-width: 500px;
+  height: 80vh;
+  background-color: var(--yellow);
+  box-shadow: -3px 0px 5px 5px rgb(3, 118, 227);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centeriser {
+  width: 85%;
+  height: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-info,
+.fav-movies {
+  width: 85%;
+  height: 85%;
+}
+
+.profile-info {
+  flex: 0 1 50%;
+}
+
+.profile-info h1 {
+  color: var(--blue);
+  font-size: 32px;
+  font-family: var(--default-font);
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.general-info {
+  color: var(--black);
+  line-height: 24px;
+  font-size: 15px;
+}
+
+.general-info p:nth-child(even) {
+  padding-left: 10px;
+  border: 2px solid var(--blue);
+  line-height: 36px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+#update-prof-dialog-button {
+  margin-top: 28px;
+  margin-left: 50px;
+  background-color: var(--yellow);
+  color: var(--blue);
+  font-size: 16px;
+  font-family: var(--default-font);
+  font-weight: 300;
+  width: 80%;
+}
+
+#update-prof-dialog-button:hover {
+  border-bottom: 2px solid var(--blue);
+}
+
+.fav-movies {
+  flex: 0 0 40%;
+  background-color: var(--dark-yellow);
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  height: auto;
+  min-width: 350px;
+}
+
+.fav-movies-list {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.fav-movies h1 {
+  color: var(--blue);
+  font-size: 20px;
+  font-family: var(--default-font);
+  font-weight: 300;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 18px;
+}
+
+.favorites-cards {
+  background-color: var(--dark-yellow);
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+}
+
+.blue-title {
+  color: var(--blue);
+  font-weight: 300;
+  font-size: 15px;
+  display: block;
+}
+
+.gray-subtitle {
+  color: var(--gray);
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.delete-account-container {
+  margin-top: 100px;
+  margin-left: 150px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--blue);
+}
+
+#delete-account-button {
+  font-family: var(--default-font);
+  font-weight: 300;
+  font-size: 13px;
+  padding: 0;
+}
+
+#delete-account-button:hover {
+  border-bottom: 2px solid var(--blue);
+}
+#delete-icon {
+  font-size: 20px;
+  height: 16px;
+  width: 20px;
+}
