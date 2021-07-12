@@ -24,8 +24,6 @@ export class FetchApiDataService {
 
   //User Login
   userLogin(username: string, password:string): Observable<any> {
-    console.log(username);
-    console.log(password);
     return this.http.post(apiUrl + 'login', {
       Username: username,
       Password: password,

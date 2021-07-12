@@ -24,13 +24,11 @@ export class UserProfileUpdateComponent implements OnInit {
   editUser(): void {
     this.fetchUserData.editUser(this.userData).subscribe((res) => {
       this.dialogRef.close();
-      console.log(res);
       localStorage.setItem('user', res.Username);
       this.snackBar.open('Profile updated successfully!', 'OK', {
         duration: 2000
       });
     }, (res) => {
-      console.log(res);
       this.snackBar.open(res, 'OK', {
         duration: 2000
       });
