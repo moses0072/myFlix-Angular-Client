@@ -9,6 +9,10 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.scss']
 })
+
+/**
+ * This component renders the navigation bar and the components it is comprised of.
+ */
 export class NavBarComponent implements OnInit {
 
   constructor(public snackBar: MatSnackBar,
@@ -16,6 +20,11 @@ export class NavBarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  /**
+   * This method will clear the token and username from local storage,
+   * will navigate to the welcome page and provide a notification of the log out.
+   */
   logOutUser(): void {
     localStorage.clear;
     this.router.navigate(['welcome']);

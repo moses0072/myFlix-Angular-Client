@@ -6,6 +6,11 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
   templateUrl: './movie-director.component.html',
   styleUrls: ['./movie-director.component.scss']
 })
+
+/**
+ * This component provides a modal for the movie director info.
+ *
+ */
 export class MovieDirectorComponent implements OnInit {
 
   constructor(@Inject(MAT_DIALOG_DATA)

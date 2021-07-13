@@ -6,6 +6,11 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
   templateUrl: './movie-genre.component.html',
   styleUrls: ['./movie-genre.component.scss']
 })
+
+/**
+ * This component provides a modal for genre info.
+ *
+ */
 export class MovieGenreComponent implements OnInit {
 
   constructor(@Inject(MAT_DIALOG_DATA)

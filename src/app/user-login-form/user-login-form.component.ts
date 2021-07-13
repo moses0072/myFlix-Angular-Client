@@ -17,6 +17,10 @@ import { Router } from '@angular/router';
   templateUrl: './user-login-form.component.html',
   styleUrls: ['./user-login-form.component.scss']
 })
+
+/**
+ * This component renders the Log In form.
+ */
 export class UserLoginFormComponent implements OnInit {
 
   @Input() userData = { Username: '', Password: '' };
@@ -30,7 +34,10 @@ export class UserLoginFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // This is the function responsible for sending the form inputs to the backend
+  /**
+   * This method sends the form inputs to the backend
+   * and saves the user and token from the server response to local storage
+   */
   userLogin(): void {
     
     this.fetchApiData.userLogin(this.userData.Username, this.userData.Password).subscribe((result) => {
